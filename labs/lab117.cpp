@@ -4,15 +4,6 @@
 #include<cstdlib>
 using namespace std;
 
-void createArr(vector<vector<int>>&arr,int m,int n){
-   
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            arr[i][j]=rand()%9;
-        }
-    }
-}
-
 void printArr(vector<vector<int>> &arr){
     for(auto row: arr){
         for(int val :row){
@@ -53,11 +44,31 @@ void findSum(vector<vector<int>>&arr, int m, int n){
     cout<<"the sum is "<<sum<<endl;
 }
 
+bool search(int a){
+    if()
+}
+
 int main(){
     srand(time(nullptr));
-    int m=7, n=6;
-    vector<vector<int>>arr(m, vector<int>(n));
-    createArr(arr, m,n);
+   
+   vector<std::vector<int>> arr = {
+    {3, 3, 6, 2, 0, 8},
+    {3, 6, 2, 5, 1, 0},
+    {0, 0, 8, 4, 1, 8},
+    {1, 3, 1, 6, 8, 5},
+    {0, 2, 5, 3, 1, 1},
+    {7, 3, 7, 6, 0, 2},
+    {2, 8, 8, 8, 5, 5}
+};
+ int m=arr.size(), n=arr[0].size();
+ 
+ for(int i=0;i<m;i++){
+    for(int j=0;j<n;j++){
+        for(int k=0;k<n;k++){
+            if(k)
+        }
+    }
+ }
     printArr(arr);
     findSum(arr,m,n);
         
